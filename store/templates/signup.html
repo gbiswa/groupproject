@@ -5,11 +5,11 @@
 
 <div class="container mt-4">
     
-    <div class="p-4 m-4">
+    <div class="p-4 m-4" >
 
         
         <div class="col-lg-5 rounded mx-auto border pt-4" style="background-color: lightblue;">
-            <div class="text-center col">
+            <div class="text-center col" >
             
                 <img 
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Shopping_cart_with_food_clip_art_2.svg/307px-Shopping_cart_with_food_clip_art_2.svg.png" alt=""
@@ -30,33 +30,33 @@
                 {% endif %}
                 <!-- firstname -->
                 <div class="form-group">
-                    <label for="">First Name</label>
+                    <label for="fname_id">First Name</label>
                     <input type="text" name="firstname"
-                     id="" value="{{values.first_name}}" class="form-control form-control-sm" 
+                     id="fname_id" value="{{values.first_name}}" class="form-control form-control-sm"
                      placeholder="">
                 </div>
 
                 <!-- last name -->
                 <div class="form-group">
-                    <label for="">Last Name</label>
+                    <label for="lname_id">Last Name</label>
                     <input type="text" name="lastname" 
-                    id="" value="{{values.last_name}}" class="form-control form-control-sm"
+                    id="lname_id" value="{{values.last_name}}" class="form-control form-control-sm"
                     >
                 </div>
 
                 <!-- phone -->
                 <div class="form-group">
-                    <label for="">Phone</label>
+                    <label for="phone_no">Phone</label>
                     <input type="text" name="phone" 
-                    id="" class="form-control form-control-sm"
+                    id="phone_no" class="form-control form-control-sm"
                     value="{{values.phone}}"
                     placeholder="565698959"
                     >
                 </div>
                 <!-- email -->
                 <div class="form-group">
-                    <label for="">Email</label>
-                    <input required type="email" name="email" id=""
+                    <label for="email_id">Email</label>
+                    <input required type="email" name="email" id="email_id"
                     value="{{values.email}}" 
                     class=" form-control-sm form-control" placeholder="example@gmail.com">
                 </div>
@@ -64,10 +64,10 @@
 
                 <!-- password -->
                 <div class="form-group">
-                    <label for="">Password</label>
+                    <label for="pword_id">Password</label>
                     <input type="password" 
                     name="password" 
-                    id=""
+                    id="pword_id"
                      class="form-control form-control-sm" placeholder="********">
                 </div>
 

@@ -14,6 +14,7 @@
 
   <style>
     nav{
+      background-color: greenyellow;
       height: 100px;
       font-weight:bold;
     }
@@ -22,7 +23,8 @@
 }
 .display-8{
   font-weight: 200;
-  font-size: 30px;
+  font-size: 50px;
+  font-weight:bold;
 }
   </style>
 </head>
@@ -33,7 +35,7 @@
 
   <nav class="one-edge-shadow 
   sticky-top navbar 
-  navbar-expand-lg
+  navbar-expand-sm
    navbar-light bg-white">
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -50,26 +52,26 @@
 
 
       <ul class=" navbar-nav my-2 my-lg-0">
-        <li class="nav-item " style="background-color: lightblue;">
-          <a class="nav-link" href="/cart">Cart 
+        <li class="nav-item ">
+          <a style="background-color: lightblue;"class="nav-link" href="/cart">Cart
             <span class="badge badge-info">{{request.session.cart.keys|length}}</span>
             <span class="sr-only">(current)</span></a>
         </li>
         {% if request.session.customer %}
         
-        <li class="nav-item " style="background-color: lightblue;">
-          <a class="nav-link" href="#">Orders<span class="sr-only">(current)</span></a>
+        <li class="nav-item ">
+          <a class="nav-link" style="background-color: lightblue;"href="#" >Orders<span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item " style="background-color: lightblue;">
-          <a class="nav-link" href="/logout">Logout<span class="sr-only">(current)</span></a>
+        <li class="nav-item ">
+          <a class="nav-link" style="background-color: lightblue;"href="/logout">Logout<span class="sr-only">(current)</span></a>
         </li>
         {% else %}
        
-        <li class="nav-item " style="background-color: lightblue;">
-          <a class="nav-link" href="/signup">Signup<span class="sr-only">(current)</span></a>
+        <li class="nav-item ">
+          <a class="nav-link" style="background-color: lightblue;"href="/signup">Signup<span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item " style="background-color: lightblue;">
-          <a class="nav-link" href="/login">Login<span class="sr-only">(current)</span></a>
+        <li class="nav-item ">
+          <a class="nav-link" style="background-color: lightblue;" href="/login">Login<span class="sr-only">(current)</span></a>
         </li>
         {% endif %}
 
